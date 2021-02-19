@@ -228,3 +228,26 @@ flex-wrap: wrap;
   margin: 30px 0 5px 0;
   color: #5b6987;
 }
+
+/* regole section features */
+#features h2{
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 30px 0;
+}
+#features .flex{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+#features .flex > div{
+  flex-basis: 33%;
+  margin: 0 25px;
+}
+#features h3{
+  font-size: 1.2rem;
+  margin: 10px 0 5px 0;
+}
+#features p{
+  font-size: 1rem;
+}
