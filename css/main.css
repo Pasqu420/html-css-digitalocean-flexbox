@@ -64,11 +64,11 @@ left: 0;
 }
 
  /* regole jumbotron */
- .jumbotron{
-   min-height: 60vh;
-   display: flex;
-   justify-content: space-between;
- }
+.jumbotron{
+ min-height: 50vh;
+ display: flex;
+ justify-content: space-between;
+}
 .jumbotron > div{
   width: 45%;
   padding-top: 50px;
@@ -83,16 +83,19 @@ left: 0;
 .card{
   width: 70%;
   margin: auto;
+  background-color: #ffff;
+  padding: 20px;
+  border-radius: 20px;
 }
 .card h3{
   text-align: center;
 }
 .card input{
-  width: 90%;
-  margin: auto;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .card button{
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 .card p > a{
@@ -101,20 +104,55 @@ left: 0;
 .card p{
   font-size: 1rem;
 }
+.card p:last-child{
+  margin: 15px 0;
+}
 
 /* regole main */
 #businesses{
   background-color: #f3f5f9;
-}
-#businesses .flex{
   text-align: center;
   padding-top: 30px;
 }
+
 #businesses ul{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 #businesses img{
   margin: 0 15px;
+}
+/* regole deploy */
+
+#deploy p,
+#deploy h2{
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.6rem;
+}
+
+#deploy .flex{
+  display: flex;
+  margin-top: 80px;
+}
+#deploy ul{
+  width: 30%;
+  padding-left: 7%;
+  font-size: 1.6rem;
+}
+#deploy ul li{
+  border-left: 1px solid #000000;
+  padding:10px 0 10px 5px;
+}
+
+#deploy .info{
+display: flex;
+width: 70%;
+flex-wrap: wrap;
+}
+.textinfo{
+  flex-basis: 50%;
+
 }
