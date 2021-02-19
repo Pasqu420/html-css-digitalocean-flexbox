@@ -20,10 +20,12 @@ header{
   background-color: #0000ff;
 }
 nav{
+  background-color: #ffff;
+}
+nav .container{
 display: flex;
 justify-content: space-between;
 padding-top: 10px;
-background-color: #ffff;
 position: relative;
 }
 
@@ -42,22 +44,43 @@ nav .dropdown{
 display: none;
 position: absolute;
 top: 50px;
-left: 0;
-}
-.menù:hover .dropdown{
-  display: block;
+right: 20px;
 }
 .menù{
   display: none;
 }
+.fa-bars{
+  font-size: 2rem;
+}
 
 @media screen and (max-width: 991px) {
+
   nav{
     padding: 10px 10px;
   }
   .menù{
     display: block;
   }
+  .dropdown li{
+    width: 500px;
+    min-height: 50px;
+    background-color:#F0F8FF ;
+    border: 1px solid black;
+  }
+  .dropdown a{
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  .menù:hover .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .menù-lg{
   display: none;
   }
