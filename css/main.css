@@ -1,0 +1,120 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+body{
+  font-size: 12px;
+}
+li{
+  list-style: none;
+}
+/* regole header */
+header{
+  background-color: #0000ff;
+}
+nav{
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+background-color: #ffff;
+position: relative;
+}
+
+nav .logo img{
+  width: 150px;
+  height: auto;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* regole menù dropdown*/
+nav .dropdown{
+display: none;
+position: absolute;
+top: 50px;
+left: 0;
+}
+.menù:hover .dropdown{
+  display: block;
+}
+.menù{
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  nav{
+    padding: 10px 10px;
+  }
+  .menù{
+    display: block;
+  }
+  .menù-lg{
+  display: none;
+  }
+}
+
+ /* regole jumbotron */
+ .jumbotron{
+   min-height: 60vh;
+   display: flex;
+   justify-content: space-between;
+ }
+.jumbotron > div{
+  width: 45%;
+  padding-top: 50px;
+}
+.jumbotron div:first-child{
+  font-size: 1.6rem;
+}
+.jumbotron div:last-child{
+  font-size: 1.4rem;
+}
+
+.card{
+  width: 70%;
+  margin: auto;
+}
+.card h3{
+  text-align: center;
+}
+.card input{
+  width: 90%;
+  margin: auto;
+}
+.card button{
+  width: 90%;
+  margin: auto;
+}
+.card p > a{
+  color: #000000;
+}
+.card p{
+  font-size: 1rem;
+}
+
+/* regole main */
+#businesses{
+  background-color: #f3f5f9;
+}
+#businesses .flex{
+  text-align: center;
+  padding-top: 30px;
+}
+#businesses ul{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+#businesses img{
+  margin: 0 15px;
+}
